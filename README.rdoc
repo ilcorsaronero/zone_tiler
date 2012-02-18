@@ -1,10 +1,8 @@
-ZONE TILER
-=========
+== ZONE TILER
 
 Zone Tiler is a Ruby library which tiles tiles. That's what it does!
 
-HOW TO
----------
+== HOW TO
 
 Place zone_tiler.rb inside your lib folder of your project,
 i.e.
@@ -26,8 +24,7 @@ when you're bored
 
   ZoneTiler::delete_tiles( destinationPath )
 
-DEPENDANCIES
----------
+== DEPENDANCIES
 
 This library makes use of:
 
@@ -35,8 +32,7 @@ This library makes use of:
 
 Please check your RMagick installation. (On ubuntu: sudo apt-get install librmagick-ruby, otherwise: gem install rmagick.)
 
-WHAT'S IN
----------
+== WHAT'S IN
 
 This library has two static methods: build_tiles and delete_tiles. It has three constants: TILE_SIZE, BACKGROUND_COLOR and FORMAT. By default they are:
 
@@ -46,4 +42,20 @@ This library has two static methods: build_tiles and delete_tiles. It has three 
 
 You can alter them in the library.
 
+
+== Bugs
+
+If you find a bug, please report it at the zone_tiler project's
+{issues tracker}[https://github.com/ilcorsaronero/zone_tiler/issues] on github.
+
+== License
+
+zone_tiler is Copyright (c) 2012 by Antonio Passamani <ilcorsaronero@gmail.com>. It is free software, and may be redistributed under the terms specified in
+LICENSE.txt.
+
+== Warranty
+
+This software is provided "as is" and without any express or implied
+warranties, including, without limitation, the implied warranties of
+merchantibility and fitness for a particular purpose.
 
