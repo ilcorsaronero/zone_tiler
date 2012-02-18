@@ -1,44 +1,48 @@
-== ZONE TILER ==
+ZONE TILER
+=========
 
 Zone Tiler is a Ruby library which tiles tiles. That's what it does!
 
-== HOW TO ==
+HOW TO
+---------
 
 Place zone_tiler.rb inside your lib folder of your project,
 i.e.
 
-[ROOT]/lib
+  [ROOT]/lib
 
 require zone_tiler
 
-require "zone_tiler.rb"
+  require "zone_tiler.rb"
 
 use zone_tiler
 
-originalPicturePath = "picture_1.jpg"
-destinationPath = "picture_1_tiles/" # will be created
-maxZoom = ZoneTiler::build_tiles( originalPicturePath, destinationPath )
-# tile from 0..maxZoom will be built inside destinationPath
+  originalPicturePath = "picture_1.jpg"
+  destinationPath = "picture_1_tiles/" # will be created
+  maxZoom = ZoneTiler::build_tiles( originalPicturePath, destinationPath )
+  # tile from 0..maxZoom will be built inside destinationPath
 
 when you're bored
 
-ZoneTiler::delete_tiles( destinationPath )
+  ZoneTiler::delete_tiles( destinationPath )
 
-== DEPENDANCIES ==
+DEPENDANCIES
+---------
 
 This library makes use of:
 
-RMagick
+  RMagick
 
 Please check your RMagick installation. (On ubuntu: sudo apt-get install librmagick-ruby, otherwise: gem install rmagick.)
 
-== WHAT'S IN ==
+WHAT'S IN
+---------
 
 This library has two static methods: build_tiles and delete_tiles. It has three constants: TILE_SIZE, BACKGROUND_COLOR and FORMAT. By default they are:
 
-TILE_SIZE = 256
-BACKGROUND_COLOR = "#DDDDDD"
-FORMAT = "jpg"
+  TILE_SIZE = 256
+  BACKGROUND_COLOR = "#DDDDDD"
+  FORMAT = "jpg"
 
 You can alter them in the library.
 
