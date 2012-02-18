@@ -34,7 +34,6 @@ module ZoneTiler
              maxZoom = (Math.log([image.columns,image.rows].max / TILE_SIZE) /
                         Math.log(2)).ceil
              FileUtils.mkdir(tile_path)
-             resized_image_paths = Array.new(maxZoom+1)
              zooms = Range.new(0,maxZoom)
              # forcing mulatiple of 2 ** z 
              surface_x_size = image.columns - (image.columns % (2 **maxZoom))
